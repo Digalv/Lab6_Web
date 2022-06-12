@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- JS -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.8/fullpage.js"></script>
+    <script defer src="js/index.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><span data-section="Guitar">Гитарные</span></li>
+            <li>
+                <div class="dropdown">
+                    <div class="Air">Духовые</div>
+                    <div class="dropdown-content">
+                        <a href="#Air/Air1">Духовые1</a>
+                        <a href="#Air/Air2">Духовые2</a>
+                        <a href="#Air/Air3">Духовые3</a>
+                    </div>
+                </div>
+            </li>
+            <li><span data-section="Drum">Ударные</span></li>
+        </ul>
+    </div>
+
+    <div class="fullpage">
+
+        <div data-index="0" data-anchor="Guitar" class="section">
+            <div class="bg" style="background-image: url(img/gitar.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Гитарные</h2>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, molestiae. Facere quam praesentium explicabo quasi et suscipit veniam, velit voluptatibus. Voluptatem aspernatur aperiam nam. Esse accusantium expedita saepe debitis
+                    sint.
+                </p>
+            </div>
+        </div>
+
+        <div data-index="1" class="section" data-anchor="Air" id="section2">
+
+            <div class="slide" data-anchor="Air1">
+                <div class="bg" style="background-image: url(img/air_1.webp)"></div>
+                <div class="content">
+                    <h2 class="title">Духовые</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, unde repellat doloribus voluptatum in cupiditate cum natus adipisci quam officia aut suscipit, quia magni neque inventore ipsum provident eaque nihil.</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Air2">
+                <div class="bg" id="bg2" style="background-image: url(img/air2.jpg)"></div>
+                <div class="content">
+                    <h2 class="title">Духовые</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi laudantium fugit tempora illum labore harum culpa error cupiditate voluptates deleniti corrupti enim necessitatibus temporibus, ipsum inventore atque laborum recusandae?</p>
+                </div>
+            </div>
+
+            <div class="slide" data-anchor="Air3">
+                <div class="bg" id="bg3" style="background-image: url(img/air3.jpg) "></div>
+                <div class="content">
+                    <h2 class="title">Духовые</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque, sunt eaque voluptate tenetur ipsa accusantium voluptatum cupiditate numquam, sequi, ad adipisci. Repudiandae nostrum similique unde laborum? Ex molestias quo reprehenderit.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-index="2" data-anchor="Drum" class="section">
+            <div class="bg" style="background-image: url(img/drum.jpg)"></div>
+            <div class="content">
+                <h2 class="title">Ударные</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora temporibus suscipit nisi ex incidunt vel perspiciatis excepturi voluptatibus tenetur sequi magnam, iure omnis nam perferendis nobis est aliquid optio ad.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
